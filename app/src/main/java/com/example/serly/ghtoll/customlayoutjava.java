@@ -1,28 +1,17 @@
 package com.example.serly.ghtoll;
 
-import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.ContentValues;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.Point;
-import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,16 +19,12 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ServerValue;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -54,13 +39,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
 
-import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
-import androidmads.library.qrgenearator.QRGSaver;
-import id.zelory.compressor.Compressor;
 
 public class customlayoutjava extends AppCompatActivity {
     String messagetoprint, price, custnetworkprovider, status, custphone, transactionreference, vehicledriverslicensefromdatabase;
@@ -123,11 +103,12 @@ public class customlayoutjava extends AppCompatActivity {
         assert firebaseUser != null;
         userId = firebaseUser.getUid();
         addingReference = FirebaseDatabase.getInstance().getReference("Receiptoftransactions");
+        addingReference.keepSynced(true);
 
         mStorageReference = FirebaseStorage.getInstance().getReference("userPhotos");
 
         mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
-
+        mDatabaseReference.keepSynced(true);
 
 
 
@@ -178,9 +159,8 @@ public class customlayoutjava extends AppCompatActivity {
                 progressDialog.show();
 
 
-
                 //                file path for the image
-                final StorageReference fileReference = mStorageReference.child("" +name);
+                final StorageReference fileReference = mStorageReference.child(userId + "." + name);
 
 
                 fileReference.putFile(name).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
@@ -318,8 +298,6 @@ public class customlayoutjava extends AppCompatActivity {
         bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight);
         return bitmap;
     }
-
-
 
 
 }
