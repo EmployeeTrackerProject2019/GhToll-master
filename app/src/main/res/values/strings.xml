@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GhToll</string>
+    <string name="loginmessage">Login</string>
+    <string name="openNav">open nav</string>
+    <string name="navClose">close nav</string>
+    <string name="logo">Logo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="v">VEH FRAG</string>
+    <string name="p">PAY FRAG</string>
+    <string name="h">HIS FRAG</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="plate_prompt">Choose a Code</string>
+
+    <string-array name="plate_initials">
+        <item>AR</item>
+        <item>BA</item>
+        <item>GT</item>
+        <item>CR</item>
+        <item>ER</item>
+        <item>UE</item>
+        <item>UW</item>
+        <item>VR</item>
+        <item>WR</item>
+        <item>NR</item>
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fabcolor">#41B53F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#060606</color>
+    <color name="colorToolbar">#1565C0</color>
+    <color name="colorBackgroundBtn">#3949AB</color>
+    <color name="ash">#DBD4D4</color>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="color_Accent">#F44336</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi">#5677fc</color>
+    <color name="blue_semi_pressed">#738FFE</color>
+    <color name="green">#4CAF50</color>
+    <color name="green_pressed">#388e3c</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whitetrans">#feeeee</color>
+    <color name="whitemodified">#00FFFFFF</color>
+    <color name="newcolor">#5B5A5A</color>
+    <color name="ashmod">#716A6A</color>
+</resources>

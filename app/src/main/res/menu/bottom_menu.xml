@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Vehicles"
+        android:icon="@drawable/ic_motorcycle_black_24dp"
+        android:title=" My Vehicles" />
+    <item
+        android:id="@+id/PayToll"
+        android:icon="@drawable/ic_payment_black_24dp"
+        android:title=" Pay Toll" />
+    <item
+        android:id="@+id/History"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="History " />
+</menu>

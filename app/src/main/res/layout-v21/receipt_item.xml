@@ -1,0 +1,215 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:background="@color/ash">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="250dp"
+                android:layout_height="140dp"
+                android:layout_gravity="start|left"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:paddingRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" DLicense: " />
+
+
+                    <TextView
+                        android:id="@+id/txtvehicleplatenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicle plate number"
+                        android:textColor="@color/black"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Provider: " />
+
+                    <TextView
+                        android:id="@+id/txtNetwork"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MTN MOBILE MONEY"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:layout_editor_absoluteX="282dp"
+                        tools:layout_editor_absoluteY="8dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Reference:   " />
+
+                    <TextView
+                        android:id="@+id/Txttransactionid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:layout_editor_absoluteX="88dp"
+                        tools:layout_editor_absoluteY="25dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Amount:   " />
+
+                    <TextView
+                        android:id="@+id/Txtamountofrequest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:layout_editor_absoluteX="45dp"
+                        tools:layout_editor_absoluteY="41dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Number:   " />
+
+                    <TextView
+                        android:id="@+id/TxtNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:layout_editor_absoluteX="31dp"
+                        tools:layout_editor_absoluteY="57dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Status:   " />
+
+
+                    <TextView
+                        android:id="@+id/txtstatusofrequest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:layout_editor_absoluteX="37dp"
+                        tools:layout_editor_absoluteY="73dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_gravity="right"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/mtn"
+                    android:id="@+id/qrcodepicture"/>
+
+            </LinearLayout>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Thanks for doing business with us  and using mobile money " />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

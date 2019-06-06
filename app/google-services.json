@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "831990994132",
+    "firebase_url": "https://finalyearghtoll.firebaseio.com",
+    "project_id": "finalyearghtoll",
+    "storage_bucket": "finalyearghtoll.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831990994132:android:4a698a47ddc46603",
+        "android_client_info": {
+          "package_name": "com.example.serly.ghtoll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831990994132-vlrele5h6ihv83k5kfd2k0qk72qerpsf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.serly.ghtoll",
+            "certificate_hash": "7fc33a1dbbdb766d16dc61db563b2e7730e7d901"
+          }
+        },
+        {
+          "client_id": "831990994132-tl25m4d3cpknkd6q7p67noae21jj92er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2q8RvW8Nog0QNXZZ5jjl78ECoCsbPtk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831990994132-tl25m4d3cpknkd6q7p67noae21jj92er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
